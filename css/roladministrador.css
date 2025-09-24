@@ -1,0 +1,64 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        nav {
+            background-color: #0048ff;
+            color: white;
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        nav h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 0 0 1rem 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 12px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s ease;
+        }
+
+        li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        li:last-child {
+            margin-top: auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            background: url('imagenes de html/Imagen de WhatsApp 2025-09-24 a las 13.32.35_bf0c16e8.jpg') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        main section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 80%;
+        }

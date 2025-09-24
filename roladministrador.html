@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrador</title>
+    <link rel="stylesheet" href="css/roladministrador.css">
+</head>
+
+<body>
+    <nav>
+        <header>
+            <h1>Rol Administrador</h1>
+        </header>
+        <ul>
+            <li onclick="cambiarContenido('Perfil del administrador')">👤 Perfil</li>
+            <li onclick="cambiarContenido('Aquí verás todas las notificaciones')">🔔 Notificaciones</li>
+            <li onclick="cambiarContenido('Gestión de usuarios: agrega, edita o elimina usuarios')">👥 Gestión de
+                usuarios</li>
+            <li onclick="cambiarContenido('Reportes disponibles del sistema')">📊 Reportes</li>
+            <li onclick="cambiarContenido('Control del sistema de alimentación para las aves')">🍽 Sistema de
+                alimentación</li>
+            <li onclick="cambiarContenido('Registros de producción y consumo')">📋 Registros</li>
+            <li onclick="cambiarContenido('Configuración y ajustes del sistema')">⚙ Ajustes</li>
+            <li onclick="cerrarSesion()">🚪 Cerrar Sesión</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contenido">
+            <h2>Bienvenido</h2>
+            <p>Selecciona una opción del menú para ver el contenido aquí.</p>
+        </section>
+    </main>
+
+    <script>
+        function cambiarContenido(texto) {
+            document.getElementById("contenido").innerHTML = `
+                <h2>${texto}</h2>
+                <p>Contenido cargado dinámicamente sin recargar la página.</p>
+            `;
+        }
+
+        function cerrarSesion() {
+            document.getElementById("contenido").innerHTML = `
+                <h2>Sesión cerrada</h2>
+                <p>Has salido del sistema. Vuelve a iniciar sesión para continuar.</p>
+            `;
+            alert("Cerraste sesión correctamente");
+        }
+    </script>
+</body>
+
+</html>
