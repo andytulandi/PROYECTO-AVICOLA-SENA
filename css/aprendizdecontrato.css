@@ -1,0 +1,48 @@
+.fondo{
+    background-image: url(../imagenes/fondo\ rol\ aprendiz\ de\ contrato.jpg) ;
+    background-size: cover;
+}
+.sidebar{
+    background-color: #28ac28;
+    width: 20%;
+    height: 200vh;
+    
+}
+.Perfil{
+    height: 10%;
+    background-color: #28ac28;
+    margin: 5px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: larger;
+}
+.Notificaciones{
+    height: 10%;
+    background-color: #28ac28;
+    text-align: center;
+    font-size: larger;
+}
+.Reportes{
+    height: 10%;
+    background-color: #28ac28;
+    text-align: center;
+    font-size: larger;
+}
+.Registros{
+    height: 10%;
+    background-color: #28ac28;
+    text-align: center;
+    font-size: larger;
+}
+.Ajustes{
+    height: 10%;
+    background-color: #28ac28;
+    text-align: center;
+    font-size: larger;
+}
+.cerrrarseccion{
+    height: 5%;
+    background-color: #28ac28;
+    text-align: right;
+    font-size: larger;
+}
